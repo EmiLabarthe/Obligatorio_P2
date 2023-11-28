@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Program</name>
+    </assembly>
+    <members>
+        <member name="T:Ucu.Poo.TelegramBot.Program">
+            <summary>
+            Un programa que implementa un bot de Telegram.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.Program.Main">
+            <summary>
+            Punto de entrada al programa.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.Program.HandleUpdateAsync(Telegram.Bot.ITelegramBotClient,Telegram.Bot.Types.Update,System.Threading.CancellationToken)">
+            <summary>
+            Maneja las actualizaciones del bot (todo lo que llega), incluyendo mensajes, ediciones de mensajes,
+            respuestas a botones, etc. En este ejemplo sólo manejamos mensajes de texto.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.Program.HandleMessageReceived(Telegram.Bot.ITelegramBotClient,Telegram.Bot.Types.Message)">
+            <summary>
+            Maneja los mensajes que se envían al bot a través de handlers de una chain of responsibility.
+            </summary>
+            <param name="message">El mensaje recibido</param>
+            <param name="botClient">Instancia concreta del tipo ITelegramBotClient</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.Program.HandleErrorAsync(Telegram.Bot.ITelegramBotClient,System.Exception,System.Threading.CancellationToken)">
+            <summary>
+            Manejo de excepciones. Por ahora simplemente la imprimimos en la consola.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.Program.LoadInitialData">
+            <summary>
+            Se encarga de cargar el sistema con algunos datos para que no arranque de 0
+            </summary>
+        </member>
+    </members>
+</doc>

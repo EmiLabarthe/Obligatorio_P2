@@ -1,0 +1,57 @@
+﻿<!-- 
+
+
+
+  <PropertyGroup>
+    
+  </PropertyGroup>
+
+
+
+
+
+</Project>
+ -->
+
+ <Project Sdk="Microsoft.NET.Sdk;Microsoft.NET.Sdk.Publish">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <UserSecretsId>PII_TelegramBot_Demo</UserSecretsId>
+    <CodeAnalysisRuleSet>..\..\.analyzers\Analyzers.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </None>
+    <None Update="Settings.job">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+    <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
+    <!-- <ProjectReference Include="..\..\..\PII_LocationApiClient\src\APILocationLibrary\LibraryAPILocation.csproj" /> -->
+
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2"/>
+    <PackageReference Include="Telegram.Bot" Version="17.0.0"/>
+    <PackageReference Include="Telegram.Bot.Extensions.Polling" Version="1.0.2"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0"/>
+    <PackageReference Include="Nito.AsyncEx" Version="5.1.2"/>
+
+  </ItemGroup>
+    <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
+    <AdditionalFiles Include="..\..\.analyzers\stylecop.json" />
+  </ItemGroup>
+</Project>

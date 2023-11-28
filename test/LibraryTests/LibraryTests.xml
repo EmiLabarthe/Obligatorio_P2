@@ -1,0 +1,1392 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibraryTests</name>
+    </assembly>
+    <members>
+        <member name="T:Tests.ContactWorkerTest">
+            <summary>
+            Clase que se encarga de probar el comando de /hireemployee
+            </summary>
+        </member>
+        <member name="M:Tests.ContactWorkerTest.Setup">
+            <summary>
+            User story que simula el contacto de un empleador a un trabajador.
+            </summary>
+        </member>
+        <member name="M:Tests.ContactWorkerTest.WorkerTryContact">
+            <summary>
+            Prueba que un worker intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.ContactWorkerTest.AdminTryContact">
+            <summary>
+            Prueba que un admin intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.ContactWorkerTest.ContactSucceeded">
+            <summary>
+            Prueba de que al empleado le llegue la notificación cuando el empleador quiere contactarlo
+            </summary>
+        </member>
+        <member name="M:Tests.ContactWorkerTest.ContactSucceededWithAProblems">
+            <summary>
+            Prueba de que al empleado le llegue la notificación cuando el empleador quiere contactarlo
+            </summary>
+        </member>
+        <member name="M:Tests.ContactWorkerTest.ConctacWorkerCancel">
+            <summary>
+            Probamos que el comando pueda cancelarse cuando se pide
+            el identificador de la oferta
+            </summary>
+        </member>
+        <member name="T:Tests.ConstructCategoryTest">
+            <summary>
+            Clase encargada de probar la funcionalidad de crear una categoría
+            </summary>
+        </member>
+        <member name="M:Tests.ConstructCategoryTest.Setup">
+            <summary>
+            User story de crear una category.
+            </summary>
+        </member>
+        <member name="M:Tests.ConstructCategoryTest.WorkerTryCreateCategory">
+            <summary>
+            Prueba que un worker intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.ConstructCategoryTest.EmployerTryCreateCategory">
+            <summary>
+            Prueba que un employer intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.ConstructCategoryTest.CreateCategory">
+            <summary>
+            Prueba que el comando de crear categoría funcione.
+            </summary>
+        </member>
+        <member name="M:Tests.ConstructCategoryTest.CreateCategoryFailed">
+            <summary>
+            Prueba que el comando de crear categoría funcione cuando se le ingresan mal los datos.
+            </summary>
+        </member>
+        <member name="M:Tests.ConstructCategoryTest.CreateCategoryCancelled">
+            <summary>
+            Prueba que el comando de crear categoría funcione como se espera cuando se cancela.
+            </summary>
+        </member>
+        <member name="T:Tests.CreateWorkOfferTest">
+            <summary>
+            Clase que se encarga de probar la funcionalidad del comando de crear ofertas de trabajo
+            </summary>
+        </member>
+        <member name="M:Tests.CreateWorkOfferTest.Setup">
+            <summary>
+            User story de crear work offer.
+            </summary>
+            
+        </member>
+        <member name="M:Tests.CreateWorkOfferTest.EmployerTryCreateWorkOffer">
+            <summary>
+            Prueba que un employer intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.CreateWorkOfferTest.AdminTryCreateWorkOffer">
+            <summary>
+            Prueba que un admin intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.CreateWorkOfferTest.CreateWorkOfferWhithoutProblems">
+            <summary>
+            Prueba que se cree y agregue una oferta de trabajo.
+            </summary>
+        </member>
+        <member name="M:Tests.CreateWorkOfferTest.CreateWorkOfferWithProblems">
+            <summary>
+            Probamos el crear una oferta con todos los datos mal en un incio y luego los modficiamos para que esten bien.
+            Cuando se ingresan mal debería de retornar un mensaje y cuando se ingresan bien otro.
+            </summary>
+        </member>
+        <member name="M:Tests.CreateWorkOfferTest.CancelCreateWorkOfferForStep">
+            <summary>
+            Prueba que se cree y agregue una oferta de trabajo.
+            </summary>
+        </member>
+        <member name="T:Tests.DeleteWorkOfferTest">
+            <summary>
+            Clase que se encarga de probar el comando eliminar WorkOffer
+            </summary>
+        </member>
+        <member name="M:Tests.DeleteWorkOfferTest.Setup">
+            <summary>
+            User story de eliminar work offer.
+            </summary>
+        </member>
+        <member name="M:Tests.DeleteWorkOfferTest.WorkerTryDeleteWorkOffer">
+            <summary>
+            Prueba que un worker intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.DeleteWorkOfferTest.EmployerTryDeleteWorkOffer">
+            <summary>
+            Prueba que un employer intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.DeleteWorkOfferTest.DeleteWorkOffer">
+            <summary>
+            Prueba que el comando de eliminar una oferta de trabajo responda como corresponde.
+            </summary>
+        </member>
+        <member name="M:Tests.DeleteWorkOfferTest.DeleteFailedWorkOffer">
+            <summary>
+            Prueba que el comando de eliminar una oferta de trabajo responda como corresponde cuando se ingresan mal los datos.
+            </summary>
+        </member>
+        <member name="M:Tests.DeleteWorkOfferTest.DeleteWorkOfferCancelled">
+            <summary>
+            Prueba que el comando de eliminar una oferta de trabajo responda como corresponde cuando se cancela.
+            </summary>
+        </member>
+        <member name="T:Tests.RateEmployerTest">
+            <summary>
+            Test del comando de calificar un empleador.
+            </summary>
+        </member>
+        <member name="M:Tests.RateEmployerTest.Setup">
+            <summary>
+            User story de calificar a un empleador.
+            </summary>
+        </member>
+        <member name="M:Tests.RateEmployerTest.EmployerTryRateEmployer">
+            <summary>
+            Prueba que un employer intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.RateEmployerTest.AdminTryRateEmployer">
+            <summary>
+            Prueba que un admin intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.RateEmployerTest.RateEmployer">
+            <summary>
+            Prueba que el comando RateEmployer se ejecute correctamente
+            </summary>
+        </member>
+        <member name="M:Tests.RateEmployerTest.FailedRateEmployer">
+            <summary>
+            Prueba que el comando RateWorker se ejecute correctamente con datos erróneos
+            </summary>
+        </member>
+        <member name="M:Tests.RateEmployerTest.RateEmployerCancelledInSecondStep">
+            <summary>
+            Prueba que el comando RateEmployer se ejecute correctamente y se cancele luego de ingresar el comando
+            </summary>
+        </member>
+        <member name="M:Tests.RateEmployerTest.RateEmployerCancelledInThirdStep">
+            <summary>
+            Prueba que el comando RateEmployer se ejecute correctamente y se cancele en el tercer paso, luego de pedir el ID de la oferta de trabajo.
+            </summary>
+        </member>
+        <member name="M:Tests.RateEmployerTest.RateEmployerCancelledInFourthStep">
+            <summary>
+            Prueba que el comando RateEmployer se ejecute correctamente y se cancele en el cuarto paso
+            </summary>
+        </member>
+        <member name="T:Tests.RateWorkerTest">
+            <summary>
+            Test del comando de calificar un trabajador.
+            </summary>
+        </member>
+        <member name="M:Tests.RateWorkerTest.Setup">
+            <summary>
+            User story de calificar un trabajador.
+            </summary>
+        </member>
+        <member name="M:Tests.RateWorkerTest.WorkerTryRateAWorker">
+            <summary>
+            Prueba que un worker intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.RateWorkerTest.AdminTryRateAWorker">
+            <summary>
+            Prueba que un admin intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.RateWorkerTest.RateWorker">
+            <summary>
+            Prueba que el comando RateWorker se ejecute correctamente
+            </summary>
+        </member>
+        <member name="M:Tests.RateWorkerTest.FailedRateWorker">
+            <summary>
+            Prueba que el comando RateWorker se ejecute correctamente con datos erróneos
+            </summary>
+        </member>
+        <member name="M:Tests.RateWorkerTest.RateWorkerCancelledInSecondStep">
+            <summary>
+            Prueba que el comando RateWorker se ejecute correctamente y se cancele luego de ingresar el comando
+            </summary>
+        </member>
+        <member name="M:Tests.RateWorkerTest.RateWorkerCancelledInThirdStep">
+            <summary>
+            Prueba que el comando RateWorker se ejecute correctamente y se cancele en el tercer paso, luego de pedir el ID de la oferta de trabajo.
+            </summary>
+        </member>
+        <member name="T:Tests.RegisterAsEmployerTest">
+            <summary>
+            Test del comando registar un usuario como un employer
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsEmployerTest.Setup">
+            <summary>
+            User story de registrarse como employer
+            </summary>
+            
+        </member>
+        <member name="M:Tests.RegisterAsEmployerTest.EmployerTrRegisterAsEmployer">
+            <summary>
+            Prueba que un employer intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsEmployerTest.WorkerTrRegisterAsEmployer">
+            <summary>
+            Prueba que un employer intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsEmployerTest.AdminTrRegisterAsEmployer">
+            <summary>
+            Prueba que un admin intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsEmployerTest.RegisterAsEmployer">
+            <summary>
+            Prueba que se ejecute correctamente el comando de registrarse como trabajador.
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsEmployerTest.FailedRegisterAsEmployer">
+            <summary>
+            Prueba a crear un employer pero con datos que fallen.
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsEmployerTest.CancelperationInSecondStep">
+            <summary>
+            Creamos un test que cancele la operación usando la palabra "cancel" en el segundo paso (el primero es ingresar el comando)
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsEmployerTest.CancelperationInThirdStep">
+            <summary>
+            Creamos un test que cancele la operación usando la palabra "cancel" en el tercer paso
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsEmployerTest.CancelperationInFourthStep">
+            <summary>
+            Creamos un test que cancele la operación usando la palabra "cancel" en el primer paso
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsEmployerTest.CancelperationInFifthStep">
+            <summary>
+            Creamos un test que cancele la operación usando la palabra "cancel" en el primer paso
+            </summary>
+        </member>
+        <member name="T:Tests.RegisterAsWorkerTest">
+            <summary>
+            Test del comando registar un usuario como un worker
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsWorkerTest.Setup">
+            <summary>
+            User story de registrarse como worker
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsWorkerTest.EmployerTrRegisterAsWorker">
+            <summary>
+            Prueba que un employer intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsWorkerTest.WorkerTrRegisterAsWorker">
+            <summary>
+            Prueba que un employer intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsWorkerTest.AdminTrRegisterAsWorker">
+            <summary>
+            Prueba que un admin intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsWorkerTest.RegisterAsWorker">
+            <summary>
+            Prueba que se ejecute correctamente el comando de registrarse como trabajador.
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsWorkerTest.FailedRegisterAsWorker">
+            <summary>
+            Prueba a crear un worker pero con datos que fallen.
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsWorkerTest.cancelóperationInSecondStep">
+            <summary>
+            Creamos un test que cancele la operación usando la palabra "cancel" en el segundo paso (el primero es ingresar el comando)
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsWorkerTest.cancelóperationInThirdStep">
+            <summary>
+            Creamos un test que cancele la operación usando la palabra "cancel" en el tercer paso
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsWorkerTest.cancelóperationInFourthStep">
+            <summary>
+            Creamos un test que cancele la operación usando la palabra "cancel" en el cuarto paso
+            </summary>
+        </member>
+        <member name="M:Tests.RegisterAsWorkerTest.cancelóperationInFifthStep">
+            <summary>
+            Creamos un test que cancele la operación usando la palabra "cancel" en el quinto paso
+            </summary>
+        </member>
+        <member name="T:Tests.ResponseAnEmployerTest">
+            <summary>
+            Test en el que probamos el comando de responder a un intento de contacto de un employer a un worker, siendo el worker el que 
+            hace uso del comando. 
+            </summary>
+        </member>
+        <member name="M:Tests.ResponseAnEmployerTest.Setup">
+            <summary>
+            User story que simula el contacto de un empleador a un trabajador.
+            </summary>
+        </member>
+        <member name="M:Tests.ResponseAnEmployerTest.EmployerTryResponseAEmployer">
+            <summary>
+            Prueba que un employer intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.ResponseAnEmployerTest.AdminTryResponseAEmployer">
+            <summary>
+            Prueba que un admin intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.ResponseAnEmployerTest.ResponseAnEmployerSuccessedResponseYes">
+            <summary>
+            Caso en el que se ingresa toda la información bien en la primera instancia, además de que 
+            ingresa yes, send, queriendo que el bot le pase su info de contacto al employers
+            </summary>
+        </member>
+        <member name="M:Tests.ResponseAnEmployerTest.ResponseAnEmployerSuccessedResponseNo">
+            <summary>
+            Caso en el que se ingresa toda la información bien en la primera instancia, además de que 
+            ingresa no, send, impidiendo que el bot le envíe su info de contaco al employer
+            </summary>
+        </member>
+        <member name="M:Tests.ResponseAnEmployerTest.ResponseAnEmployerSuccessedWithProblemsResponseYes">
+            <summary>
+            Ingresa la información bien, luego mal, luego bien y así hasta que se completa con el caso de 
+            respuesta Yes, send
+            </summary>
+        </member>
+        <member name="M:Tests.ResponseAnEmployerTest.ResponseAnEmployerSuccessedWithProblemsResponseNo">
+            <summary>
+            Ingresa la información bien, luego mal, luego bien y así hasta que se completa con el caso de 
+            respuesta No, send
+            </summary>
+        </member>
+        <member name="M:Tests.ResponseAnEmployerTest.ResponseAnEmployerCancelInFirstStep">
+            <summary>
+            Ingresamos el nombre del comando, lo usamos y le damos cancelar en el primer paso.
+            Probamos que devuelve el mensaje esperado confirmando la cancelación. 
+            </summary>
+        </member>
+        <member name="M:Tests.ResponseAnEmployerTest.ResponseAnEmployerCancelInSecondtStep">
+            <summary>
+            Ingresamos el nombre del comando, lo usamos, le ingreasamos una id validad de notificación
+             y le damos cancelar en el segundo paso.
+            Probamos que devuelve el mensaje esperado confirmando la cancelación. 
+            </summary>
+        </member>
+        <member name="T:Tests.SearchAllWorkOffersCommandTest">
+            <summary>
+            Test que prueba la función del comando de mostrar todas las work offers.
+            </summary>
+        </member>
+        <member name="M:Tests.SearchAllWorkOffersCommandTest.Setup">
+            <summary>
+            User story de buscar todas las ofertas de trabajo
+            </summary>
+            
+        </member>
+        <member name="M:Tests.SearchAllWorkOffersCommandTest.SearchWorkOfferWhenYouDontExistInSystem">
+            <summary>
+            Caso de prueba de cuando un user  de telegram cualquiera que no es un usuario del sistema 
+            intenta usar el comando
+            </summary>
+        </member>
+        <member name="M:Tests.SearchAllWorkOffersCommandTest.SearchWorkOffers">
+            <summary>
+            Prueba que el comando devuelva todas las work offers que hay que tiene el published en tru.
+            </summary>
+        </member>
+        <member name="M:Tests.SearchAllWorkOffersCommandTest.ShowAllWorkOffersButListIsEmpty">
+            <summary>
+            Test que prueba a ver que responde cuando no hay ninguna oferta puesta en el sistema como para responder
+            </summary>
+        </member>
+        <member name="T:Tests.SearchFilteredWorkOfferCommandTest">
+            <summary>
+            Test que prueba la función del comando encargado de buscar y devolver todas las ofertas de trabajo que se han hechos filtradas por la cateogoría indicada
+            </summary>
+        </member>
+        <member name="M:Tests.SearchFilteredWorkOfferCommandTest.SetUp">
+            <summary>
+            Hacemos configuraciones generales para poder usar en los test
+            </summary>
+        </member>
+        <member name="M:Tests.SearchFilteredWorkOfferCommandTest.WorkerTrySearchFiltered">
+            <summary>
+            Prueba que un worker intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.SearchFilteredWorkOfferCommandTest.AdminTrySearchFiltered">
+            <summary>
+            Prueba que un admin intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.SearchFilteredWorkOfferCommandTest.FilterdByCategoryTest">
+            <summary>
+            Prueba que el comando funcione cuando quiere filtar por categoría
+            </summary>
+        </member>
+        <member name="M:Tests.SearchFilteredWorkOfferCommandTest.FilterdByCategoryWithAProblems">
+            <summary>
+            Prueba que el comando funcione cuando quiere filtar por categoría
+            </summary>
+        </member>
+        <member name="M:Tests.SearchFilteredWorkOfferCommandTest.FilterdByCategoryButNoExistWorkOffers">
+            <summary>
+            Prueba que el comando funcione cuando quiere filtar por categoría pero no hay una lista de ofertas
+            </summary>
+        </member>
+        <member name="M:Tests.SearchFilteredWorkOfferCommandTest.FilterdByCategoryCancelInFirstSetp">
+            <summary>
+            Prueba que el comando funcione cuando quiere filtar por categoría pero no hay una lista de ofertas
+            </summary>
+        </member>
+        <member name="M:Tests.SearchFilteredWorkOfferCommandTest.FilterdByCategoryCancelInSecondStep">
+            <summary>
+            Prueba que el comando funcione cuando quiere filtar por categoría pero no hay una lista de ofertas
+            </summary>
+        </member>
+        <member name="T:Tests.SearchSortedOfferCommand">
+            <summary>
+            Test que prueba la función del comando de mostrar todas las work offers.
+            </summary>
+        </member>
+        <member name="M:Tests.SearchSortedOfferCommand.Setup">
+            <summary>
+            User story de registrarse como employer
+            </summary>
+            
+        </member>
+        <member name="M:Tests.SearchSortedOfferCommand.WorkerTrySearchSorted">
+            <summary>
+            Prueba que un worker intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.SearchSortedOfferCommand.AdminTrySearchSorted">
+            <summary>
+            Prueba que un admin intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.SearchSortedOfferCommand.SearchSortedWorkOffersByDistance">
+            <summary>
+            Probamos el caso de ordenar ofertas por la ubicación del dueño, cuando la lista no esta vacía.
+            </summary>
+        </member>
+        <member name="M:Tests.SearchSortedOfferCommand.SearchSortedByLocationInAnEmptyList">
+            <summary>
+            Ahora probamos que hace el comando cuando el employer quiere ordenar las ofertas por ubicación, 
+            pero la lista que no tiene elementos.
+            </summary>
+        </member>
+        <member name="M:Tests.SearchSortedOfferCommand.SearchSortedWorkOffersByRate">
+            <summary>
+            Probamos el caso de ordenar ofertas por la calificación del dueño, cuando la lista no esta vacía.
+            </summary>
+        </member>
+        <member name="M:Tests.SearchSortedOfferCommand.SearchSortedByRateInAnEmptyList">
+            <summary>
+            Ahora probamos que hace el comando cuando el employer quiere ordenar las ofertas por calificación, 
+            pero la lista que no tiene elementos.
+            </summary>
+        </member>
+        <member name="M:Tests.SearchSortedOfferCommand.SerachSortedCancelCommand">
+            <summary>
+            Se cancela la ejecución del comando cuando le pide ingresar el criterio de ordenación
+            </summary>
+        </member>
+        <member name="T:Tests.ShowCategoriesInSystemCommandTest">
+            <summary>
+            Test que prueba la función del comando encargado de buscar y devolver todas las categorías.
+            </summary>
+            
+        </member>
+        <member name="M:Tests.ShowCategoriesInSystemCommandTest.SetUp">
+            <summary>
+            Se configuran cosas para probar en este test, como la limpieza de listas por si hay información repetida
+            </summary>
+        </member>
+        <member name="M:Tests.ShowCategoriesInSystemCommandTest.SearchWorkOfferWhenYouDontExistInSystem">
+            <summary>
+            Caso de prueba de cuando un user  de telegram cualquiera que no es un usuario del sistema 
+            intenta usar el comando
+            </summary>
+        </member>
+        <member name="M:Tests.ShowCategoriesInSystemCommandTest.ShowCategoriesTest">
+            <summary>
+            Prueba que el comando devuelva todas las categorías que hay. Habiendo categorías para cualquiera de 
+            los tres tipos de perfiles que tenemos hoy
+            </summary>
+        </member>
+        <member name="M:Tests.ShowCategoriesInSystemCommandTest.ShowCategoriesTestButNoExistCategories">
+            <summary>
+            Prueba que el comando devuelve un mensaje de advertencia al que ingresa el comando ya que esta vacía la lista. El mensaje 
+            te lo devuelve si estas registrado en el sistema como uno de nuestros profiles,
+            </summary>
+        </member>
+        <member name="T:Tests.ShowNotificationsCommandTest">
+            <summary>
+            Clase que se encarga de probar la funcionalidad del comando de mostrar el las notificaciones que un usuario tiene.
+            </summary>
+        </member>
+        <member name="M:Tests.ShowNotificationsCommandTest.Setup">
+            <summary>
+            User story de mostrar las notificaciones de los user: employer y worker
+            </summary>
+        </member>
+        <member name="M:Tests.ShowNotificationsCommandTest.AdminTryRateAWorker">
+            <summary>
+            Prueba que un admin intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.ShowNotificationsCommandTest.ShowNotificationsWorker">
+            <summary>
+            Prueba que el comando devuelva todas las notificaciones que hay que hay.
+            </summary>
+            
+        </member>
+        <member name="M:Tests.ShowNotificationsCommandTest.ShowNotificationsWorkerButWorkerNotHaveNotifications">
+            <summary>   
+             Se prueba el caso en el que se busca en las notificaciones del 
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:Tests.ShowNotificationsCommandTest.ShowNotificationsEmployer">
+            <summary>
+            Prueba que el comando devuelva todas las notificaciones que tiene
+            </summary>
+            
+        </member>
+        <member name="M:Tests.ShowNotificationsCommandTest.ShowNotificationsEmployerButEmployerNotHaveNotifications">
+            <summary>   
+            Se prueba el caso en el que se busca en las notificaciones del employer, pero 
+            este no tiene notificaciones
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Tests.ShowRateEmployerCommandTest">
+            <summary>
+            Clase que se encarga de probar la funcionalidad del comando de mostrar el rating de un employer.
+            </summary>
+        </member>
+        <member name="M:Tests.ShowRateEmployerCommandTest.Setup">
+            <summary>
+            User story de crear employer.
+            </summary>
+            
+        </member>
+        <member name="M:Tests.ShowRateEmployerCommandTest.EmployerTryShowRateEmployer">
+            <summary>
+            Prueba que un employer intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.ShowRateEmployerCommandTest.ShowRateEmployer">
+            <summary>
+            Prueba de que el comando devuelva el rate del employer
+            </summary>
+        </member>
+        <member name="M:Tests.ShowRateEmployerCommandTest.ShowRateEmployerWithProblems">
+            <summary>
+            La versión de uso del comando en el cual el usuario comete errores en el paso de ingrear el id del employer
+            pero finalmente logra hacerlo bien y ver la calificación.
+            </summary>
+        </member>
+        <member name="M:Tests.ShowRateEmployerCommandTest.ShowRateButEmployerNeverWasCalificated">
+            <summary>
+            Se encarga de probar que devuelva un mensaje como que el employer nunca fue calificado
+            </summary>
+        </member>
+        <member name="M:Tests.ShowRateEmployerCommandTest.ShowRateCancel">
+            <summary>
+            Se encarga de probar que se cancele cuando se le da cancel en el único paso que tiene
+            </summary>
+        </member>
+        <member name="T:Tests.ShowRateWorkerCommandTest">
+            <summary>
+            Clase que se encarga de probar la funcionalidad del comando de mostrar el rating de un worker.
+            </summary>
+        </member>
+        <member name="M:Tests.ShowRateWorkerCommandTest.Setup">
+            <summary>
+            User story de crear worker.
+            </summary>
+            
+        </member>
+        <member name="M:Tests.ShowRateWorkerCommandTest.WorkerTryRateAWorker">
+            <summary>
+            Prueba que un worker intente usar el comando y no pueda hacerlo
+            </summary>
+        </member>
+        <member name="M:Tests.ShowRateWorkerCommandTest.ShowRateWorker">
+            <summary>
+            Se prueba que devuelva el rate del worker correctamente
+            </summary>
+        </member>
+        <member name="M:Tests.ShowRateWorkerCommandTest.ShowRateWorkerWithProblems">
+            <summary>
+            La versión de uso del comando en el cual el usuario comete errores en el paso de ingrear el id del worker
+            pero finalmente logra hacerlo bien y ver la calificación.
+            </summary>
+        </member>
+        <member name="M:Tests.ShowRateWorkerCommandTest.ShowRateButWorkerNeverWasCalificated">
+            <summary>
+            Se encarga de probar que devuelva un mensaje como que el worker nunca fue calificado
+            </summary>
+        </member>
+        <member name="M:Tests.ShowRateWorkerCommandTest.ShowRateCancel">
+            <summary>
+            Se encarga de probar que se cancele cuando se le da cancel en el único paso que tiene
+            </summary>
+        </member>
+        <member name="T:Tests.AdminConstructorTest">
+            <summary>
+            Test que se encarga de probar el constructor de Admin.
+            </summary>
+        </member>
+        <member name="M:Tests.AdminConstructorTest.ConstructAdmin">
+            <summary>
+            Probamos a construir los admins con los datos adecuados.
+            </summary>
+        </member>
+        <member name="M:Tests.AdminConstructorTest.ConstructFailedAdminByWrongID">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal el userID
+            </summary>
+        </member>
+        <member name="T:Tests.DatabaseTests">
+            <summary>
+            Prueba de la clase <see cref="T:ClassLibrary.Database"/>.
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.Setup">
+            <summary>
+            Crea la base de datos a probar
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOffer">
+            <summary>
+            Prueba que se cree y agruge una oferta de trabajo.
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferDescriptionNull">
+            <summary>
+            Prueba que no se cree una oferta de trabajo por que la descripción es nula
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferDescriptionEmpty">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que la descripción es empty 
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferDescriptionWhiteSpace">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que la descripción no tiene nada, es espacios en blanco 
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferCurrencyNull">
+            <summary>
+            Prueba que no se cree una oferta de trabajo por que la moneda es nula
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferCurrencyEmpty">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que la moneda es empty 
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferCurrencyWhiteSpace">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que la moneda no tiene nada, contiene solo espacios en blanco 
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferWrongCurrency">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que la moneda indicada no es la correcta. Es texto, 
+            pero no del esperado por el método
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferLessThantCeroPrice">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que el precio indicado no 
+            es el correcto por que es menor a 0
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferEqualsCeroPrice">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que el precio indicado no 
+            es el correcto por que es menor a 0
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferLessThantCeroDuration">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que la duracción del trabajo
+             es menor a 0, lo cual no es valido
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferEqualsCeroDuration">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que la duración del trabajo  no 
+            es la correcta por que es igual a 0
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferNoExistCategory">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que la categoría indicada no existe 
+            es la correcta por que es igual a 0
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferEmptyListCategories">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que en sí no se indica ninguna categoría, se pasa una 
+            lista vacía. 
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferEmptyCategory">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que en
+             sí se indica una categoría en blanco, empty.
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOfferWhiteSpaceCategory">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que en sí se indica una categoría
+             que solo tiene espacios en blanco
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkOffeNullCategory">
+            <summary>
+            Prueba que no se cree la oferta de trabajo por que en sí se indica una categoría
+             que solo tiene espacios en blanco
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.WorkOfferDuplicate">
+            <summary>
+            Caso de prueba donde se busca ingresar dos veces la misma oferta, con exactamente los mismos datos
+            haciendo un duplicado, por ende no se pued permitir, y solo debe alojar una.
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.WorkOfferOwnerIDIsNotValid">
+            <summary>
+            Test donde se prueba que no se cree un workOffer con un identificador de usuario invalido
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.WorkOfferOwnerIDNoIsWorkerIDIsOfAdmin">
+            <summary>
+            Test donde se prueba que no se cree un workOffer con un identificador de usuario que no corresponde
+            a un worker, sino a un admin
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.WorkOfferOwnerIDNoIsWorkerIDIsOfEmployer">
+            <summary>
+            Test donde se prueba que no se cree un workOffer con un identificador de usuario que no corresponde
+            a un worker, sino a un admin
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.DeleteWorkOfferExist">
+            <summary>
+            Se pasa un id de work offer que no existe, por que esta fuera del rango de 
+            0 hasta UltimateWorkOfferID
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.DeleteWorkOfferNoExist">
+            <summary>
+            Se pasa un id de work offer que no existe, por que esta fuera del rango de 
+            0 hasta UltimateWorkOfferID
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddCategory">
+            <summary>
+            Prueba que se cree y agruge una categoría sin importar si esta en mayus o en min en alguna parte
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddCategoryEmptyName">
+            <summary>
+            Prueba que no se cree una categoría con un nombre en blanco
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddCategoryNullName">
+            <summary>
+            Prueba que no se cree una categoría con un nombre null
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddCategoryDuplicate">
+            <summary>
+            Prueba de que no se creen dos categorías con el mismo nombre
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorker">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un worker
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerFailddNameEmpty">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un worker, cuando debería de fallar por que el nombre 
+            del user esta vacío
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerFailddNameWhiteSpace">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un worker, cuando debería de fallar por que el nombre 
+            del user son espacios vacíos
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerFailddNameNull">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un worker, cuando debería de fallar por que el nombre 
+            del user esta nullo
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerFaildLastNameEmpty">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un worker, cuando debería de fallar por que el apellido 
+            del user esta vacío
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerFaildLastNameWhiteSpace">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un worker, cuando debería de fallar por que el apellido 
+            del user esta solo con espacios en blanco.
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerFaildLastNameNull">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un worker, cuando debería de fallar por que el apellido 
+            del user esta nulo
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerFaildPhoneEmpty">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un worker, cuando debería de fallar por que el 
+            phone esta vacío
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerFaildPhonWhiteSpace">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un worker, cuando debería de fallar por que el phone 
+            del user son espacios en blanco
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerFaildPhoneNull">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un worker, cuando debería de fallar por que el phone 
+            del user son espacios en blanco
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerDuplicate">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un worker dos veces. 
+            Haciendo que se agrege la primera vez, pero que no se cree otro con los mismos datos
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerButUserAlreadyExistAsAdmin">
+            <summary>
+            Se trata de agregar un usuario cuando ya esta en la lista de admins
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddWorkerButUserAlreadyExistAsEmployer">
+            <summary>
+            Se trata de agregar un usuario cuando ya esta en la lista de empleadores
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployer">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un employer
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerFailddNameEmpty">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un employer, cuando debería de fallar por que el nombre 
+            del user esta vacío
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerFailddNameWhiteSpace">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un employer, cuando debería de fallar por que el nombre 
+            del user son espacios vacíos
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerFailddNameNull">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un employer, cuando debería de fallar por que el nombre 
+            del user esta nullo
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerFaildLastNameEmpty">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un employer, cuando debería de fallar por que el apellido 
+            del user esta vacío
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerFaildLastNameWhiteSpace">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un employer, cuando debería de fallar por que el apellido 
+            del user esta solo con espacios en blanco
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerFaildLastNameNull">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un employer, cuando debería de fallar por que el apellido 
+            del user esta nulo
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerFaildPhoneEmpty">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un employer, cuando debería de fallar por que el 
+            phone esta vacío
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerFaildPhonWhiteSpace">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un employer, cuando debería de fallar por que el phone 
+            del user son espacios en blanco
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerFaildPhoneNull">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un employer, cuando debería de fallar por que el phone 
+            del user son espacios en blanco
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerDuplicate">
+            <summary>
+            Se encarga de probar la funcionalidad de agregar un employer dos veces. 
+            Haciendo que se agrege la primera vez, pero que no se cree otro con los mismos datos
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerButUserAlreadyExistAsAdmin">
+            <summary>
+            Se trata de agregar un usuario cuando ya esta en la lista de admins
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddEmployerButUserAlreadyExistAsWorker">
+            <summary>
+            Se trata de agregar un empleador cuando ya esta en la lista de workers
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddAdmin">
+            <summary>
+            Se encarga de probar que funcione correctamente el guardar un admin en la database luego de 
+            creaerlo al seguir creator
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddAdminDuplicate">
+            <summary>
+            Se encarga de probar que no se agregue el amdin dos veces a la lista
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddAdminButUserAlreadyExistAsWorker">
+            <summary>
+            Prueba que no se agregue el admin si ya esta registrado como un worker
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.AddAdminButUserAlreadyExistAsEmployerr">
+            <summary>
+            Prueba que no se agregue el admin si ya esta registrado como un employer
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.GetWorkers">
+            <summary>
+            Como es un singleton, y creamos un worker antes, al menos va tener un worker, pero si 
+            solo revisamos ese  al correrlo solo daría una falla. Entonces creamos un Admin, y validamos que 
+            la lista no este vacía, al mismo tiempo que revisamos que este ese Admin en particular, 
+            para comprobar que funciona bien
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.GetEmployers">
+            <summary>
+            Como es un singleton, y creamos un empoloyer antes, al menos va tener un empoloyer, pero si 
+            solo revisamos ese  al correrlo solo daría una falla. Entonces creamos un Admin, y validamos que 
+            la lista no este vacía, al mismo tiempo que revisamos que este ese Admin en particular, 
+            para comprobar que funciona bien
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.GetAdmins">
+            <summary>
+            Como es un singleton, y creamos un admin antes, al menos va tener un admin, pero si 
+            solo revisamos ese  al correrlo solo daría una falla. Entonces creamos un Admin, y validamos que 
+            la lista no este vacía, al mismo tiempo que revisamos que este ese Admin en particular, 
+            para comprobar que funciona bien
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodExistWorkerWhenWorkerExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve que existe un worker
+            cuando se pasa información correcta y se crea el worker
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodExistWorkerWhenWorkerNotExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve que existe un worker
+            cuando se busca si existe un id de un worker que no existe
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodExistEmployerWhenEmployerExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve que existe un employer
+            cuando se pasa información correcta y se crea el worker
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodExistEmployerWhenEmployerNotExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve que existe un employer
+            cuando se busca si existe un id de un worker que no existe
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodExistAdminWhenAdminrExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve que existe un admin
+            cuando se pasa información correcta y se crea el worker
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodExistAdminWhenAdminNotExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve que existe un admin
+            cuando se busca si existe un id de un worker que no existe
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodExistWorkOfferWhenOfferExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve que existe una oferta de trabajo
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodExistWorkOfferWhenOfferNotExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve que no existe una oferta de trabajo con ese
+            identificador en el sistema
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodSearchOfferWhenOfferExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve que existe una oferta de trabajo
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodSearchOfferWhenOfferNotExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve el objeto de 
+            la base de datos cuando este no existe. 
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodSearchWorkerWhenWorkerExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve que el objeto worker si es 
+            que existe un worker que tenga de userID el que se esta especificando
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodSerachWorkerWhenWorkerNotExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve el objeto worker cuando lo encuentra, si no lo 
+            encuentra devuelve null, que es lo que va a suceder aquí
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodSearchEmployerWhenEmployerExist">
+            <summary>
+            Test probando el método de la base de datos de que devuelve el objeto employer
+            al pasarle un id de un employer que existe
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodSearchEmployerWhenEmployerNotExist">
+            <summary>
+            Prueba el método de la clasde database que devulve un employer cuando encuentra un employer 
+            que tenga la id que se le espcecifica. En este caso se prueba de que el método devulva null
+            cuando se le pasa una id que no corresponde a un employer
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodMatchOfferWhenOfferExist">
+            <summary>
+            Test probando el método de la base de datos de que revisa si hay una workOffer que ya tenga todo los datos que 
+            se le estan pasando, en la base de datos. 
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.MethodMatchOfferWhenOfferNotExist">
+            <summary>
+            Test probando el método de la base de datos de que revisa si hay una workOffer que ya tenga todo los datos que 
+            se le estan pasando, en la base de datos.  En este caso deberá devolver 0 por que no se agrego ninguna oferta con esos datos
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.ClearWorkers">
+            <summary>
+            Test que prueba el método limpiar la lista de workers
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.ClearEmployers">
+            <summary>
+            Test que prueba el método limpiar la lista de employers
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.ClearAdmins">
+            <summary>
+            Test que prueba el método limpiar la lista de admins
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.ClearWorkOffers">
+            <summary>
+            Test que prueba el método limpiar la lista de ofertas de trabajo
+            </summary>
+        </member>
+        <member name="M:Tests.DatabaseTests.ClearCategories">
+            <summary>
+             Prueba que se limpie la lista de categorías
+            </summary>
+        </member>
+        <member name="T:Tests.EmployerConstructorTest">
+            <summary>
+            Test que se encarga de probar el constructor de Employer.
+            </summary>
+        </member>
+        <member name="M:Tests.EmployerConstructorTest.ConstructEmployer">
+            <summary>
+            Probamos a construir los employers con los datos adecuados.
+            </summary>
+        </member>
+        <member name="M:Tests.EmployerConstructorTest.ConstructFailedEmployerByWrongID">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal el userID
+            </summary>
+        </member>
+        <member name="M:Tests.EmployerConstructorTest.ConstructFailedEmployerByWrongName">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal el nombre, ya sea por estar vacío, ser espacios en blanco o ser nulo
+            </summary>
+        </member>
+        <member name="M:Tests.EmployerConstructorTest.ConstructFailedEmployerByWrongLastname">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal el apellido, ya sea por estar vacío, ser espacios en blanco o ser nulo
+            </summary>
+        </member>
+        <member name="M:Tests.EmployerConstructorTest.ConstructFailedEmployerByWrongPhone">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal el celular, ya sea por estar vacío, ser espacios en blanco o ser nulo
+            </summary>
+        </member>
+        <member name="M:Tests.EmployerConstructorTest.ConstructFailedEmployerByWrongAddress">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la dirección, ya sea por estar vacío, ser espacios en blanco o ser nulo
+            </summary>
+        </member>
+        <member name="M:Tests.EmployerConstructorTest.ConstructFailedEmployerByWrongLatitude">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la latitud, ya sea estando por debajo de -90 o por arriba de 90
+            </summary>
+        </member>
+        <member name="M:Tests.EmployerConstructorTest.ConstructFailedEmployerByWrongLongitude">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la longitud, estando por encima de 180 o por debajo de -180
+            </summary>
+        </member>
+        <member name="T:Tests.LocationConstructorTest">
+            <summary>
+            Test que se encarga de probar el constructor de Location.
+            </summary>
+        </member>
+        <member name="M:Tests.LocationConstructorTest.ConstructLocation">
+            <summary>
+            Probamos a construir los location con los datos adecuados.
+            </summary>
+        </member>
+        <member name="M:Tests.LocationConstructorTest.ConstructFailedEmployerByWrongAddress">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la dirección, ya sea por estar vacío, ser espacios en blanco o ser nulo
+            </summary>
+        </member>
+        <member name="M:Tests.LocationConstructorTest.ConstructFailedEmployerByWrongLatitude">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la latitud, ya sea estando por debajo de -90 o por arriba de 90
+            </summary>
+        </member>
+        <member name="M:Tests.LocationConstructorTest.ConstructFailedEmployerByWrongLongitude">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la longitud, estando por encima de 180 o por debajo de -180
+            </summary>
+        </member>
+        <member name="T:Tests.NotificationConstructorTest">
+            <summary>
+            Test que se encarga de probar el constructor de Notification.
+            </summary>
+        </member>
+        <member name="M:Tests.NotificationConstructorTest.ConstructNotification">
+            <summary>
+            Probamos a construir las notifications con los datos adecuados.
+            </summary>
+        </member>
+        <member name="M:Tests.NotificationConstructorTest.ConstructFailedNotificationMessageInvalid">
+            <summary>
+            Se probarán los tres posibles casos en los que el mensaje esta mal, y deberá fallar por cada uno
+            </summary>
+        </member>
+        <member name="M:Tests.NotificationConstructorTest.ConstructFailedMessageWrongSenderID">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal el userID del que genera la notificación
+            </summary>
+        </member>
+        <member name="M:Tests.NotificationConstructorTest.ConstructFailedMessageWrongID">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal el id de la notificación, el cual se va incrementando en la clase User 
+            por cada notificación que recibe
+            </summary>
+        </member>
+        <member name="T:Tests.RatingConstructorTest">
+            <summary>
+            Clase que se encarga de probar el constructor de Rating.
+            </summary>
+        </member>
+        <member name="M:Tests.RatingConstructorTest.ConstructRate">
+            <summary>
+            Probamos a construir las Rates con los datos adecuados.
+            </summary>
+        </member>
+        <member name="M:Tests.RatingConstructorTest.FaildConstructRateWrongCalificatorID">
+            <summary>
+            No se crea el Rating y levanta una excepción al no encontrar valido el userID del calificador
+            </summary>
+        </member>
+        <member name="M:Tests.RatingConstructorTest.FaildConstructRateWrongDuration">
+            <summary>
+            No se crea el Rating y levanta una excepción al no encontrar valida la duración de la oferta de trabajo
+            </summary>
+        </member>
+        <member name="M:Tests.RatingConstructorTest.FaildConstructRateWrongWorkOfferID">
+            <summary>
+            No se crea el Rating y levanta una excepción al no encontrar valido el identificador del workOffer
+            </summary>
+        </member>
+        <member name="T:Tests.WorkerConstructorTest">
+            <summary>
+            Test que se encarga de probar el constructor de Worker.
+            </summary>
+        </member>
+        <member name="M:Tests.WorkerConstructorTest.ConstructWorker">
+            <summary>
+            Probamos a construir los workers con los datos adecuados.
+            </summary>
+        </member>
+        <member name="M:Tests.WorkerConstructorTest.ConstructFailedWorkerByWrongID">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal el userID
+            </summary>
+        </member>
+        <member name="M:Tests.WorkerConstructorTest.ConstructFailedWorkerByWrongName">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal el nombre, ya sea por estar vacío, ser espacios en blanco o ser nulo
+            </summary>
+        </member>
+        <member name="M:Tests.WorkerConstructorTest.ConstructFailedWorkerByWrongLastname">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal el apellido, ya sea por estar vacío, ser espacios en blanco o ser nulo
+            </summary>
+        </member>
+        <member name="M:Tests.WorkerConstructorTest.ConstructFailedWorkerByWrongPhone">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal el celular, ya sea por estar vacío, ser espacios en blanco o ser nulo
+            </summary>
+        </member>
+        <member name="M:Tests.WorkerConstructorTest.ConstructFailedWorkerByWrongAddress">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la dirección, ya sea por estar vacío, ser espacios en blanco o ser nulo
+            </summary>
+        </member>
+        <member name="M:Tests.WorkerConstructorTest.ConstructFailedWorkerByWrongLatitude">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la latitud, ya sea estando por debajo de -90 o por arriba de 90
+            </summary>
+        </member>
+        <member name="M:Tests.WorkerConstructorTest.ConstructFailedWorkerByWrongLongitude">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la longitud, estando por encima de 180 o por debajo de -180
+            </summary>
+        </member>
+        <member name="T:Tests.WorkOfferConstructorTest">
+            <summary>
+            Test que se encarga de probar el constructor de WorkOffer
+            </summary>
+        </member>
+        <member name="M:Tests.WorkOfferConstructorTest.ConstructWorkOffer">
+            <summary>
+            Probamos a construir las WorkOffers con los datos adecuados.
+            </summary>
+        </member>
+        <member name="M:Tests.WorkOfferConstructorTest.ConstructFailedWorkOfferWrongID">
+            <summary>
+            Constructor con datos vacíos o negativos para testear las validaciones.
+            </summary>
+        </member>
+        <member name="M:Tests.WorkOfferConstructorTest.ConstructFailedWorkOfferByWrongDescrption">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la descripción, ya sea por estar vacía, ser espacios en blanco o ser nula
+            </summary>
+        </member>
+        <member name="M:Tests.WorkOfferConstructorTest.ConstructFailedWorkOfferByWrongCurrency">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la moneda, ya sea por estar vacía, ser espacios en blanco, siendo nula o una fuera de las correctas
+            </summary>
+        </member>
+        <member name="M:Tests.WorkOfferConstructorTest.ConstructFailedWorkOfferWrongPrice">
+            <summary>
+            Constructor con datos vacíos o negativos para testear las validaciones.
+            </summary>
+        </member>
+        <member name="M:Tests.WorkOfferConstructorTest.ConstructFailedWorkOfferWrongOwnerID">
+            <summary>
+            Constructor con datos vacíos o negativos para testear las validaciones.
+            </summary>
+        </member>
+        <member name="M:Tests.WorkOfferConstructorTest.ConstructFailedWorkOfferByWrongCategories">
+            <summary>
+            Prueba que levante las excepciones correpondientes a las precondiciones
+            al estar mal la moneda, ya sea por estar vacía, ser espacios en blanco, siendo nula o una fuera de las correctas
+            </summary>
+        </member>
+        <member name="M:Tests.WorkOfferConstructorTest.ConstructFailedWorkOfferWrongDuration">
+            <summary>
+            Constructor con datos vacíos o negativos para testear las validaciones.
+            </summary>
+        </member>
+    </members>
+</doc>
